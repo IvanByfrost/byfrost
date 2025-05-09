@@ -1,0 +1,30 @@
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="about">
+                    <h2>Nosotros</h2>
+                    <p>Nuestra solución tecnológica innovadora propone transformar la gestión administrativa de las instituciones educativas, ofreciendo una plataforma intuitiva y sostenible.</p>
+                </div>
+        <div class="contact">
+                    <h2>Contacto</h2>
+                    <p>Cra 7 # 98-25, Bogotá, Colombia</p>
+                    <p>(601) 7886590</p>
+                    <p>(601) 4567890</p>
+                    <a href="www.byfrost.com.co">www.byfrost.com.co</a>
+                    <p>info@byfrost.com</p>
+                </div>
+        <div class="site-map">
+                    <p><a href="../../index.php">Inicio</a></p>
+                    <p><a href="contact.htm">Contáctenos</a></p>
+                    <p><a href="site-map.htm">Mapa del sitio</a></p>
+                </div>
+            </div>
+    <div class = "copyright">
+            <p>Byfrost &copy; 2026. Todos los derechos reservados.</p>
+            <p>Diseñado por Byfrost Software.</p>
+        </div>
+    </div>
+    </footer>
+</body>
+<script src="../../assets/js/siderbar.js"></script>
+</html>

@@ -1,0 +1,279 @@
+/* Estilos generales */
+
+.main-header {
+    display: flex;
+    font-family: lato, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+  }
+  
+  .logo-header {
+    margin-left: 10px;
+    display: flex;
+  }
+  
+  .login-bttn {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    height: 58px;
+  }
+  
+  .login-bttn img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .login-bttn:hover {
+    text-decoration: bolder;
+    background-color: #d9f6dd;
+    color: #057a35;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-bttn a {
+    text-decoration: none;
+  }
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .menu-bar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+  .menu-bar a:hover {
+    color: #007bff;
+  }
+
+body {
+    font-family: lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('../img/fondo-login.webp'); /* Reemplaza 'fondo.jpg' con tu imagen de fondo */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Login Box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-box .logo img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: lato, sans-serif;
+
+}
+
+.login-box button {
+    background-color: #00b7ff;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: 10px;
+    font-family: lato, sans-serif;
+    font-weight: 800;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#register-bttn {
+    background-color: #66FF66;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-box a {
+    display: block;
+    margin-bottom: 5px;
+    color: #00b7ff;
+    text-decoration: bolder;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contenedor flexible */
+.footer-content {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado más equilibrado */
+    max-width: 1100px; /* Para que no se estire demasiado */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Ajustando las secciones */
+footer .about,
+footer .contact,
+footer .site-map {
+    flex: 1; /* Para que ocupen el mismo espacio */
+    min-width: 280px; /* Evita que se vuelvan demasiado angostos */
+    max-width: 400px; /* Evita que se expandan demasiado */
+    text-align: left;
+}
+
+/* Títulos */
+footer h2 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Texto */
+footer p {
+    font-size: 14px;
+    line-height: 1.5; /* Mejora la legibilidad */
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+footer a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Aplica borde verde cuando el campo está enfocado */
+.login-box input:focus,
+.login-box select:focus {
+    border-color: #a5ffa0;
+}
+
+/* Aplica borde verde cuando el campo tiene texto o valor válido */
+.login-box input:not(:placeholder-shown),
+.login-box select:valid {
+    border-color: #a5ffa0;
+}
+
+.gallery-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    padding: 20px 0;
+}
+.gallery-slider img {
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    min-width: 100%; /* 100% por imagen */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* 100% por imagen */
+    overflow: hidden;
+  }
+
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+  display: block;
+  text-align: right;
+}
