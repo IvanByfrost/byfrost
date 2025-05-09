@@ -512,3 +512,31 @@ CREATE TABLE user_photo (
 	FOREIGN KEY (user_main_id) REFERENCES user_main(user_main_id),
 	photo varchar(255) NOT NULL
 );
+
+--Tabla de calificaciones de las asignaturas.
+CREATE TABLE subject_score (
+	subject_score_id INT PRIMARY KEY AUTO_INCREMENT,
+	student_id INT NOT NULL,
+	FOREIGN KEY (student_id) REFERENCES student(student_id),
+	subject_id INT NOT NULL,
+	FOREIGN KEY (subject_id) REFERENCES subject_school(subject_id),
+	academic_term_id INT NOT NULL,
+	FOREIGN KEY (academic_term_id) REFERENCES academic_term(academic_term_id),
+	score DECIMAL(10,2) NOT NULL
+);
+
+--Tabla de promedios de las asignaturas.
+-- Esta tabla permite que un estudiante tenga varios promedios de asignaturas.
+-- Esta tabla permite que una asignatura tenga varios promedios.
+CREATE TABLE subject_average (
+	subject_average_id INT PRIMARY KEY AUTO_INCREMENT,
+	student_id INT NOT NULL,
+	FOREIGN KEY (student_id) REFERENCES student(student_id),
+	subject_id INT NOT NULL,
+	FOREIGN KEY (subject_id) REFERENCES subject_school(subject_id),
+	academic_term_id INT NOT NULL,
+	FOREIGN KEY (academic_term_id) REFERENCES academic_term(academic_term_id),
+	average DECIMAL(10,2) NOT NULL
+);
+
+--Tabla de 
