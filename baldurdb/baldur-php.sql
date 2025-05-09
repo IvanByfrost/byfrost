@@ -9,12 +9,11 @@ CREATE TABLE user_main (
 	dob DATE NOT NULL,
 	password_hash VARBINARY(255) NOT NULL,
 	salt_password VARBINARY(255) NOT NULL,
-	user_status BIT NOT NULL DEFAULT 1,
+	user_status BIT NOT NULL DEFAULT 1
 );
 
 --Index de documento de identidad
-CREATE INDEX user_index_credential
-ON user_main (credential_number);
+CREATE INDEX user_index_credential ON user_main (credential_number);
 
 -- Tabla de teléfonos. 
 CREATE TABLE phone_user (
@@ -43,7 +42,7 @@ CREATE TABLE role_duty (
 -- Tabla puente de rol y usuarios.
 CREATE TABLE role_duty_user(
 	role_duty_user_id INT PRIMARY KEY AUTO_INCREMENT,
-	role_duty_id INT INT NOT NULL,
+	role_duty_id INT NOT NULL,
     user_main_id INT NOT NULL,
     FOREIGN KEY (user_main_id) REFERENCES user_main(user_main_id)
 );
@@ -60,7 +59,7 @@ CREATE TABLE access_role (
 	access_role_id INT PRIMARY KEY AUTO_INCREMENT,
 	role_id INT not null,
 	access_description VARCHAR(100) NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES role_user(role_duty_user_id)
+    FOREIGN KEY (role_id) REFERENCES role_duty_user(role_duty_user_id)
 );
 
 --Tabla de padres. 
@@ -75,7 +74,7 @@ CREATE TABLE student (
 	student_id INT PRIMARY KEY AUTO_INCREMENT,
 	user_main_id INT NOT NULL,
     FOREIGN KEY (user_main_id) REFERENCES user_main(user_main_id)
-	student_status BIT NOT NULL DEFAULT 1,
+	student_status BIT NOT NULL DEFAULT 1
 );
 
 --Tabla de cuentas de estudiantes.
@@ -128,6 +127,13 @@ CREATE TABLE professor (
     FOREIGN KEY (user_main_id) REFERENCES user_main(user_main_id)
 );
 
+--Tabla de los grados. 
+CREATE TABLE grade (
+	grade_id INT PRIMARY KEY AUTO_INCREMENT,
+	name_grade VARCHAR(10) NOT NULL,
+	level_grade VARCHAR(30) NOT NULL
+);
+
 --Tabla de los grupos de clases.
 CREATE TABLE class_group (
 	class_group_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -137,13 +143,6 @@ CREATE TABLE class_group (
     FOREIGN KEY (professor_id) REFERENCES professor(professor_id)
     grade_id INT NOT NULL,
     FOREIGN KEY (grade_id) REFERENCES grade(grade_id)
-);
-
---Tabla de los grados. 
-CREATE TABLE grade (
-	grade_id INT PRIMARY KEY AUTO_INCREMENT,
-	name_grade VARCHAR(10) NOT NULL,
-	level_grade VARCHAR(30) NOT NULL
 );
 
 --Tabla puente entre estudiantes y grupos de clases.
@@ -161,7 +160,7 @@ CREATE TABLE student_group (
 CREATE TABLE group_schedule (
 	group_schedule_id INT PRIMARY KEY AUTO_INCREMENT,
 	class_group_id INT NOT NULL,
-    FOREIGN KEY REFERENCES class_group(class_group_id),
+    FOREIGN KEY (class_group_id) REFERENCES class_group(class_group_id),
 	schedule_id INT NOT NULL,
     FOREIGN KEY (schedule_id) REFERENCES schedule_school(schedule_id)
 );
@@ -214,7 +213,7 @@ CREATE TABLE shift_role (
         shift_user_id INT not null, 
         FOREIGN KEY (shift_user_id) REFERENCES shift_user(shift_user_id),
         role_duty_user_id INT not null,
-        FOREIGN KEY (role_duty_user_id) REFERENCES role_user(role_duty_user_id)
+        FOREIGN KEY (role_duty_user_id) REFERENCES role_duty(role_duty_user_id)
 );
 
 --Tabla de rectores. 
@@ -267,7 +266,7 @@ CREATE TABLE school_grade (
 	school_campus_id INT not null,
     FOREIGN KEY (school_campus_id) REFERENCES school_campus(school_campus_id),
 	grade_id INT not null,
-    FOREIGN KEY REFERENCES grade(grade_id)
+    FOREIGN KEY (grade_id) REFERENCES grade(grade_id)
 );
 
 --Tabla de salones.
@@ -335,7 +334,7 @@ CREATE TABLE transaction_user (
 	transaction_id INT PRIMARY KEY AUTO_INCREMENT,
 	transaction_number VARCHAR(50) NOT NULL,
 	bank_id INT not null,
-    FOREIGN KEY REFERENCES bank(bank_id),
+    FOREIGN KEY (bank_id) REFERENCES bank(bank_id),
 	transaction_amount DECIMAL NOT NULL,
 	concept_transaction VARCHAR(40)
 );
@@ -359,7 +358,7 @@ CREATE TABLE score (
 	student_id INT NOT NULL,
     FOREIGN KEY (student_id) REFERENCES student(student_id),
 	academic_term_id INT not null,
-    FOREIGN KEY REFERENCES academic_term(academic_term_id),
+    FOREIGN KEY (academic_term_id) REFERENCES academic_term(academic_term_id),
 	activity_id INT not null,
     FOREIGN KEY (activity_id) REFERENCES activity(activity_id),
 );
@@ -369,15 +368,15 @@ CREATE TABLE attendance (
 	attendance_id INT PRIMARY KEY AUTO_INCREMENT,
 	check_in_at DATETIME  NOT NULL,
 	student_id INT NOT NULL,
-    FOREIGN KEY REFERENCES student(student_id),
+    FOREIGN KEY (student_id) REFERENCES student(student_id),
 	academic_term_id INT NOT NULL,
-    FOREIGN KEY REFERENCES academic_term(academic_term_id),
+    FOREIGN KEY (academic_term_id) REFERENCES academic_term(academic_term_id),
 	week_id INT NOT NULL,
     FOREIGN KEY(week_id) REFERENCES week_day(week_id),
 	subject_id INT not null,
     FOREIGN KEY (subject_id) REFERENCES subject_school(subject_id),
 	professor_id INT NOT NULL,
-    FOREIGN KEY REFERENCES professor(professor_id)
+    FOREIGN KEY (professor_id) REFERENCES professor(professor_id)
 );
 
 --Tabla de observadores.
