@@ -19,4 +19,4 @@
         </div>
     </div>
 
-    <?php include '../includes/footer/footer.php'; ?>
+    <?php include '../includes/footer/error-footer.php'; ?>

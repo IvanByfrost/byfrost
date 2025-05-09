@@ -14,8 +14,10 @@
                     <p>info@byfrost.com</p>
                 </div>
         <div class="site-map">
-                    <p><a href="../../index.php">Inicio</a></p>
+                    <p><a href="#">Inicio</a></p>
+                    <p><a href="plans.htm">Planes</a></p>
                     <p><a href="contact.htm">Contáctenos</a></p>
+                    <p><a href="/byfrost/pages/privacy/guide.php">FAQ</a></p>
                     <p><a href="site-map.htm">Mapa del sitio</a></p>
                 </div>
             </div>
