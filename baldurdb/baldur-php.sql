@@ -539,4 +539,13 @@ CREATE TABLE subject_average (
 	average DECIMAL(10,2) NOT NULL
 );
 
---Tabla de 
+--Tabla de asignaturas de los docentes.
+-- Esta tabla permite que un docente tenga varias asignaturas.
+-- Esta tabla permite que una asignatura tenga varios docentes.
+CREATE TABLE professor_subject (
+	professor_subject_id INT PRIMARY KEY AUTO_INCREMENT,
+	professor_id INT NOT NULL,
+	FOREIGN KEY (professor_id) REFERENCES professor(professor_id),
+	subject_id INT NOT NULL,
+	FOREIGN KEY (subject_id) REFERENCES subject_school(subject_id)
+);
