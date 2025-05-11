@@ -84,7 +84,7 @@ body {
 
 .error-container {
     display: flex;
-    background-image: url('/byfrost/assets/img/malla-byfrost.jpg');
+    background-image: url('../img/malla-byfrost.jpg');
     flex-direction: column;
     justify-content: center;
     align-items: center;

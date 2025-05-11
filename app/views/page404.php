@@ -1,5 +1,5 @@
-<?php include '../includes/head/error-head.php';?>
-<?php include '../includes/header/header.php'; ?>
+<?php include 'includes/head/error-head.php';?>
+<?php include 'includes/header/header.php'; ?>
 
 <body>
     <div class="error-container">
@@ -14,9 +14,9 @@
                 La página que estás buscando se encuentra dañada o no existe.
             </h3>
             <div class="image-error">
-                <img src="../assets/img/error-404.svg" alt="Error 404" width="150">
+                <img src="assets/img/error-404.svg" alt="Error 404" width="150">
             </div>
         </div>
     </div>
 
-    <?php include '../includes/footer/error-footer.php'; ?>
+    <?php include 'includes/footer/error-footer.php'; ?>

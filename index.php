@@ -1,5 +1,5 @@
-<?php include 'includes/head/head.php';?>
-<?php include 'includes/header/header.php'; ?>
+<?php include 'app/views/includes/head/head.php';?>
+<?php include 'app/views/includes/header/header.php'; ?>
 
 <body>
     <div class="slider-container swiper">
@@ -78,4 +78,4 @@
     </div>
 </section>
 
-<?php include '/byfrost/includes/footer/footer.php';?>
+<?php include 'app/views/includes/footer/footer.php';?>
