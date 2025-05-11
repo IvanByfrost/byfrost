@@ -78,4 +78,4 @@
     </div>
 </section>
 
-<?php include 'includes\footer.php';?>
+<?php include '/byfrost/includes/footer/footer.php';?>
