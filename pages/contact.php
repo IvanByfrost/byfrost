@@ -16,11 +16,11 @@
 
       <div class="form-group">
         <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="10 dígitos">
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Teléfono sin espacios" maxlength="10">
       </div>
 
       <div class="form-group">
-        <label for="asunto">Asunto *</label>
+        <label for="asunto">Asunto</label>
         <select id="asunto" name="asunto" required>
           <option value="">Seleccione una opción</option>
           <option value="consulta">Consulta general</option>
