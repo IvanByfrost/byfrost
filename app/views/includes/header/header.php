@@ -2,7 +2,7 @@
     <div class="main-header">
     <div class="logo-header">
         <a href="/byfrost/index.php">
-            <img src="../views/assets/img/horizontal-logo.svg" alt="Byfrost Logo" width="200">
+            <img src="..\app\views\assets\img\horizontal-logo.svg" alt="Byfrost Logo" width="200">
         </a>
     </div>
 
@@ -12,9 +12,9 @@
         <a href="/byfrost/pages/privacy/guide.php" class="btn-menu">FAQ</a>
     </div>
 
-    <a href="/byfrost/pages\login.php">
+    <a href="app\views\login.php">
         <div class="login-bttn">
-    <img src="../views/assets/img/user-icon.svg" alt="User Icon" width="30"> 
+    <img src="app\views\assets\img\user-icon.svg" alt="User Icon" width="30"> 
     Iniciar sesión
         </div>
     </a>
