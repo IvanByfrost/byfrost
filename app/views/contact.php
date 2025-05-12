@@ -1,5 +1,8 @@
-<?php include '../includes/head/contact-head.php';?>
-<?php include '../includes/header/header.php'; ?>
+<?php 
+require_once __DIR__ . '/../../config/app.php';
+include __DIR__ . '/includes/head/contact-head.php';
+include __DIR__ . '/includes/header/header.php';
+?>
 
 <div class="form-container">
     <h2>Contáctanos</h2>

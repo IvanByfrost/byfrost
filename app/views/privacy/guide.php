@@ -1,7 +1,8 @@
 <?php 
-include('../../includes/head/privacy-head.php');
-include('../../includes/header/privacy-header.php');
+include 'byfrost\app\views\includes\header\privacy-header.php';
+include 'app\views\includes\head\privacy-head.php';
 ?>
+
 <div>
 <div class="sidebar" id="sidebar">
 <nav>
@@ -23,4 +24,6 @@ Con el registro de la información autorizo  libre, expresa e inequívocamente a
 	</div>
 </div>
 
-<?php include '../../includes/footer/privacy-footer.php';?>
+<?php 
+include __DIR__ . '/includes/footer/footer.php';
+?>
