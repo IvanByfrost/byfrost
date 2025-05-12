@@ -14,7 +14,7 @@
 
     <a href="app\views\login.php">
         <div class="login-bttn">
-    <img src="app\views\assets\img\user-icon.svg" alt="User Icon" width="30"> 
+    <img src="app/views/assets/img/user-icon.svg" alt="User Icon" width="30"> 
     Iniciar sesión
         </div>
     </a>

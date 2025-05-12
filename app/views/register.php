@@ -1,10 +1,12 @@
-<?php include '../includes/head/register-head.php';?>
+<?php 
+ include __DIR__ . '/includes/head/register-head.php';
+?>
 
 <div class="login-container">
   <div class="login-box">
     <div class="logo">
-		<a href="../index.php">
-      <img src="../assets/img/horizontal-logo.svg" alt="Byfrost Logo">
+		<a href="\byfrost\index.php">
+      <img src="assets\img\horizontal-logo.svg" alt="Byfrost Logo">
 		</a>
     </div>
 	  <div class="login-titles">	
@@ -12,7 +14,7 @@
       <p>Rellena los siguientes campos con tus datos</p>
     	</div>
 
-<form id="register-form">
+<form id="register-form" method="POST">
   <div class="input-grid">
     <select id="document-type" required>
       <option value="" disabled selected>Tipo de documento</option>
@@ -33,4 +35,7 @@
   </div>
 </div>
 
-<?php include '../includes/footer/footer.php';?>
+<?php 
+include __DIR__ . '/includes/footer/footer.php';
+include __DIR__ . '/includes/register-script.php';
+?>

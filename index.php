@@ -81,4 +81,7 @@ include 'app/views/includes/header/header.php';
     </div>
 </section>
 
-<?php include 'app/views/includes/footer/footer.php';?>
+<?php 
+include 'app/views/includes/footer/footer.php';
+include 'app/views/includes/home-scripts.php';
+?>

@@ -1,10 +1,12 @@
-<?php include '../includes/head/register-head.php';?>
+<?php 
+include __DIR__ . '/includes/head/register-head.php';
+?>
 
 <div class="login-container">
   <div class="login-box">
     <div class="logo">
-		<a href="home.html">
-      <img src="../assets/img/horizontal-logo.svg" alt="Byfrost Logo">
+		<a href="\byfrost\index.php">
+      <img src="assets\img\horizontal-logo.svg" alt="Byfrost Logo">
 			</a>
       <div class="login-titles">	
         <h3>¡Crea tu cuenta!</h3>
@@ -12,7 +14,7 @@
         </div>
       </div>
 
-      <form id="contact-form">
+      <form id="contact-form" method="POST">
         <div class="input-grid">
           <input type="tel" id="phone-user" placeholder="Número de teléfono" pattern="\d{10}" required>
           <input type="address" id="adress_user" placeholder="Dirección" required>
@@ -34,4 +36,7 @@
 </div>
 </div>
 
-<?php include '../includes/footer/footer.php';?>
+<?php 
+include __DIR__ . '/includes/footer/footer.php';
+include __DIR__ . '/includes/register-script.php';
+?>
