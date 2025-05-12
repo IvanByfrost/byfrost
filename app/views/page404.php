@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../../config/app.php';
 include __DIR__ . '/includes/head/error-head.php';
 include __DIR__ . '/includes/header/header.php';
+include __DIR__ . '/links.php';
 ?>
 
 <body>
