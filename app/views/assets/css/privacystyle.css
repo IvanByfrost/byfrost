@@ -36,8 +36,8 @@ body {
     left: 0;
     width: 250px;
     height: 100vh;
-    background-color: #caff9b;
-    color: rgb(4, 255, 138);
+    background-color: #f6f6f6;
+    color: rgb(239, 239, 239);
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     z-index: 5; /* Asegura que el sidebar quede detrás del header */
