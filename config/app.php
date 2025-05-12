@@ -6,4 +6,6 @@ const APP_DESCRIPTION = 'Byfrost es un sistema de gestión educativa desarrollad
 const company_name = 'Asgard Technologies S.A.S.';
 const money = 'COP $';
 date_default_timezone_get('America/Bogota');
+
+define('BASE_URL', '/byfrost'); // o solo '/' si está en raíz
 ?>
