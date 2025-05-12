@@ -1,10 +1,12 @@
-<?php include '../includes/head/login-head.php';?>
+<?php 
+ include __DIR__ . '/includes/head/login-head.php';
+?>
 
 <div class="login-container">
     <form id="login-form" class="login-box">
         <div class="logo">
-            <a href="../index.php">
-      <img src="../assets/img/horizontal-logo.svg" alt="Byfrost Logo">
+            <a href="\byfrost\index.php">
+      <img src="/assets/img/horizontal-logo.svg" alt="Byfrost Logo">
 			</a>
         </div>
         <input type="text" id="documento" name="documento" placeholder="Número de documento" required pattern="[0-9]+" title="Solo números">
@@ -19,4 +21,6 @@
     </form>
 </div>
 
-<?php include '../includes/footer/footer.php';?>
+<?php 
+include __DIR__ . '/includes/footer/footer.php';
+?>

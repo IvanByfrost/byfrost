@@ -70,7 +70,7 @@ body {
     margin: 0;
     padding: 0;
     background-size: cover;
-    background-image: url('../img/fondo-login.webp'); /* Reemplaza 'fondo.jpg' con tu imagen de fondo */
+    background-image: url('..//img/fondo-login.webp'); /* Reemplaza 'fondo.jpg' con tu imagen de fondo */
     background-position: center;
     display: flex;
     flex-direction: column;

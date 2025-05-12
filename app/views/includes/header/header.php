@@ -2,7 +2,7 @@
     <div class="main-header">
     <div class="logo-header">
         <a href="/byfrost/index.php">
-            <img src="..\app\views\assets\img\horizontal-logo.svg" alt="Byfrost Logo" width="200">
+            <img src="app\views\assets\img\horizontal-logo.svg" alt="Byfrost Logo" width="200">
         </a>
     </div>
 

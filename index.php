@@ -1,5 +1,8 @@
-<?php include 'app/views/includes/head/head.php';?>
-<?php include 'app/views/includes/header/header.php'; ?>
+<?php 
+require_once 'config/app.php';
+include 'app/views/includes/head/head.php';
+include 'app/views/includes/header/header.php';
+?>
 
 <body>
     <div class="slider-container swiper">
