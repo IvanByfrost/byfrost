@@ -2,10 +2,11 @@
 require_once __DIR__ . '/../../../config/app.php';
 include __DIR__ . '/../includes/head/privacy-head.php';
 include __DIR__ . '/../includes/header/privacy-header.php';
-
+include __DIR__ . '/../links.php';
 ?>
 
-<div>
+<div class="privacy-container">
+
 <div class="sidebar" id="sidebar">
 <nav>
       <ul>
@@ -28,6 +29,8 @@ include __DIR__ . '/../includes/header/privacy-header.php';
 		- Declaro que como titular de la información, fui informado de los derechos con que cuento como titular de la información, especialmente a conocer, actualizar y rectificar mi información personal, revocar la autorización y solicitar la supresión del dato, las cuales podré ejercer a través de los canales presenciales con el personal de Atención al Usuario, el correo electrónico: pqrsd@desarrolloeconomico.gov.co, y en la línea de teléfono: en Bogotá (601) 369 37 77 Ext: 100."
 	
   </div>
+</div>
+
 </div>
 
 <?php 

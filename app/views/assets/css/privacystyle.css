@@ -1,36 +1,7 @@
-.main-header {
-    display: flex;
-    font-family: lato, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px;
-    text-align: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    z-index: 10;
-    position: fixed;
-    width: 100%;
-  }
-
-  .logo-header {
-    margin-left: 10px;
-    display: flex;
-  }
-
-/* Estilos generales */
-body {
-    font-family: lato, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-bottom: 100px; /* Ajusta según el alto de tu footer */
-  }
-
-  .sidebar {
+.privacy-container {
+  margin-left: 250px; /* Igual al ancho del sidebar */
+}
+.sidebar {
     position: fixed;
     top: 88px; /* Deja espacio debajo del header */
     left: 0;
@@ -70,7 +41,6 @@ body {
   background-color: #ffffff;
   height: 100vh;
   overflow-y: auto;
-  margin-top: 100px; /* Espacio para el header */
 }
 
 @media (max-width: 768px) {
@@ -81,61 +51,4 @@ body {
   .guide-container {
     margin-left: 200px;
   }
-}
-
-  /* Footer */
-footer {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px 0;
-    text-align: center;
-    z-index: 1;
-    margin-left: 250px; /* Deja espacio para el sidebar */
-}
-
-/* Contenedor flexible */
-.footer-content {
-    display: flex;
-    justify-content: center; /* Centra los elementos */
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaciado más equilibrado */
-    max-width: 1100px; /* Para que no se estire demasiado */
-    margin: 0 auto;
-    padding: 10px;
-}
-
-/* Ajustando las secciones */
-footer .about,
-footer .contact,
-footer .site-map {
-    flex: 1; /* Para que ocupen el mismo espacio */
-    min-width: 280px; /* Evita que se vuelvan demasiado angostos */
-    max-width: 400px; /* Evita que se expandan demasiado */
-    text-align: left;
-}
-
-/* Títulos */
-footer h2 {
-    font-size: 1.4em;
-    margin-bottom: 8px;
-    font-weight: 700;
-}
-
-/* Texto */
-footer p {
-    font-size: 14px;
-    line-height: 1.5; /* Mejora la legibilidad */
-    margin-bottom: 10px;
-}
-
-/* Enlaces */
-footer a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-footer a:hover {
-    color: #007bff;
 }

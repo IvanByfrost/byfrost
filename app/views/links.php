@@ -1,4 +1,5 @@
     <link rel="stylesheet" href="<?= BASE_URL ?>/app/views/assets/css/mainstyle.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/app/views/assets/css/footer.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/app/views/assets/css/loginstyle.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/app/views/assets/css/privacystyle.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/app/views/assets/css/registerstyle.css">
