@@ -1,8 +1,8 @@
 <?php 
 require_once 'config/app.php';
 include 'app/views/includes/head/head.php';
-include 'app/views/includes/header/header.php';
 include __DIR__ . '/app/views/links.php';
+include 'app/views/includes/header/header.php';
 ?>
 
 <body>

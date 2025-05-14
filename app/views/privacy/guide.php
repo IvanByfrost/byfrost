@@ -1,8 +1,9 @@
 <?php 
 require_once __DIR__ . '/../../../config/app.php';
 include __DIR__ . '/../includes/head/privacy-head.php';
-include __DIR__ . '/../includes/header/privacy-header.php';
 include __DIR__ . '/../links.php';
+include __DIR__ . '/../includes/header/privacy-header.php';
+
 ?>
 
 <div class="privacy-container">
