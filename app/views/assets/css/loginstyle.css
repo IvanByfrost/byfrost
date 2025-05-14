@@ -1,3 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../img/fondo-login.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Login Box */
 .login-container {
     display: flex;

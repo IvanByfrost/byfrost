@@ -1,3 +1,13 @@
+.wrapper-register {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../img/fondoregister.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
 /* Form Inputs */
 #document-type, #credential-number, #name_user, #lastname_user, #phone-user, #adress_user, #email_user, #conf-email_user, #password_user, #conf-password_user {
   width: 100%;

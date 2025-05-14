@@ -18,7 +18,7 @@ include __DIR__ . '/includes/header/header.php';
                 La página que estás buscando se encuentra dañada o no existe.
             </h3>
             <div class="image-error">
-                <img src="app\views\assets\img\error-404.svg" alt="Error 404" width="150">
+                <img src="<?= BASE_URL ?>/app/views/assets/img/error-404.svg" alt="Error 404" width="150">
             </div>
         </div>
     </div>

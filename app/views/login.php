@@ -2,9 +2,8 @@
 require_once __DIR__ . '/../../config/app.php';
 include __DIR__ . '/includes/head/login-head.php';
 include __DIR__ . '/links.php';
-include __DIR__ . '/includes/header/header.php';
 ?>
-
+<div class = "wrapper">
 <div class="login-container">
     <form id="login-form" class="login-box">
         <div class="logo">
@@ -22,6 +21,7 @@ include __DIR__ . '/includes/header/header.php';
             <button type="button" id="register-bttn" class="bg-green-700 hover:bg-green-800 text-yellow-300 font-bold py-2 px-4 rounded">Crear una nueva cuenta</button>
         </a>
     </form>
+</div>
 </div>
 
 <?php
