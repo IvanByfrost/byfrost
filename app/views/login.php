@@ -14,7 +14,9 @@ include __DIR__ . '/links.php';
         <input type="text" id="documento" name="documento" placeholder="Número de documento" required pattern="[0-9]+" title="Solo números">
         <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
 
+        <a href ="byfrost\app\views\dashboard\root\root-dashboard.php">
         <button type="submit" id="iniciar-sesion" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Iniciar sesión</button>
+</a>
         <span id="password-error" class="error-msg"></span>
         <a href="search-account.html">¿Olvidaste tu contraseña?</a>
         <a href="register.php">
