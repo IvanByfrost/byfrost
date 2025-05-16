@@ -1,23 +1,31 @@
 <?php
-require_once __DIR__ . '/../../../../config/app.php';
-include __DIR__ . '/../../includes/head/dash-head.php';
-include __DIR__ . '/../../links.php';
-include __DIR__ . '/../../includes/header/root-header.php';
+include __DIR__ . '/menu-dashboard.php';
 ?>
+    <div class="main-dashboard">
+    <div class ="mdashboard-header">
+        <h1>Bienvenido al Dashboard del Administrador</h1>
+        <p>Desde aquí puedes gestionar los colegios, rectores, usuarios y permisos.</p>
+    </div>
 
-<div class="root-dashboard">
-    <div class="root-sidebar">
-        <ul>
-            <li><a href="#"><i data-lucide="school"></i> Colegio</a></li>
-            <li><a href="#"><i data-lucide="users"></i> Rectores</a></li>
-            <li><a href="#"><i data-lucide="user"></i> Usuarios</a></li>
-            <li><a href="#"><i data-lucide="key"></i> Permisos</a></li>
-            <li><a href="#"><i data-lucide="settings"></i> Configuración</a></li>
-            <li><a href="#"><i data-lucide="bar-chart-2"></i> Reportes</a></li>
-        </ul>
+    <div class="dashboard-cards">
+        <div class="card">
+            <h3>Colegios</h3>
+            <p>Gestiona los colegios registrados en Byfrost.</p>
+            <a href="school.php" class="btn btn-info">Gestionar</a>
+        </div>
+        <div class="card">
+            <h3>Rectores</h3>
+            <p>Gestiona los rectores registrados en Byfrost.</p>
+            <a href="hmaster.php" class="btn btn-info">Gestionar</a>
+        </div>
+        <div class="card">
+            <h3>Usuarios</h3>
+            <p>Gestiona los usuarios registrados en Byfrost.</p>
+            <a href="user.php" class="btn btn-info">Gestionar</a>
+        </div>
     </div>
-    <div class>
     </div>
+</div>
 
     <?php
     include __DIR__ . '/../../includes/footer/footer.php';
