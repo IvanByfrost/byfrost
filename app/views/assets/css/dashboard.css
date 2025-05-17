@@ -50,6 +50,7 @@
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .mdashboard-header {
@@ -63,6 +64,7 @@
 .dashboard-cards {
     display: flex;
     gap: 20px;
+    padding: 10px;
 }
 
 .card {
@@ -76,8 +78,8 @@
 }
 
 .card:hover {
-    background-color: #cc56ff;
-    color: white;
+    background-color: #97ff9e;
+    color: rgb(0, 0, 0);
 }
 
 .dash-form {
@@ -117,6 +119,17 @@
     transition: background-color 0.3s ease;
 }
 
+.btn-info {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #55beff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+}
+
 .btn-cancel {
     padding: 10px 20px;
     border: none;
@@ -126,3 +139,41 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+    .search-container {
+      display: flex;
+      background-color: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .search-container input[type="text"] {
+      border: none;
+      padding: 10px 15px;
+      width: 100%;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-container button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .search-container button:hover {
+      background-color: #45a049;
+    }
