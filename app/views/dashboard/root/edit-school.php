@@ -11,12 +11,12 @@ include __DIR__ . '/menu-dashboard.php';
         <form class="dash-form" id="school-form" method="POST">
             <div class="form-header">
                 <h2><i data-lucide="school"></i>Editar colegio</h2>
-                <p>Aquí puedes editar los datos del colegio.</p>
+                <p>Aquí puedes editar los datos del colegio o desactivarlo.</p>
             </div>
             <div class="search-container">
                 <form class="search-container" action="#" method="GET">
                     <input type="text" placeholder="Buscar..." name="q">
-                    <button type="submit">🔍</button>
+                    <button type="submit"><i data-lucide="search"></i></button>
             </div>
             <div class="input-grid">
                 <input type="text" id="school-name" placeholder="Nombre del colegio" required>

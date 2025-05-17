@@ -9,15 +9,20 @@ include __DIR__ . '/menu-dashboard.php';
     </div>
 
     <div class="dashboard-cards">
-                <div class="card">
+        <div class="card">
             <h3>Crear un colegio</h3>
             <p>Registra los colegios aquí</p>
             <a href="create-school.php" class="btn btn-info">Crear</a>
         </div>
-                <div class="card">
+        <div class="card">
             <h3>Editar un colegio</h3>
             <p>Edita la información los colegios aquí</p>
             <a href="edit-school.php" class="btn btn-info">Editar</a>
+        </div>
+        <div class="card">
+            <h3>Borrar un colegio</h3>
+            <p>Aquí puedes inactivar a los colegios de Byfrost</p>
+            <a href="delete-school.php" class="btn btn-info">Borrar</a>
         </div>
     </div>
 
