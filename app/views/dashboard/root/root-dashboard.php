@@ -11,7 +11,7 @@ include __DIR__ . '/menu-dashboard.php';
         <div class="card">
             <h3>Colegios</h3>
             <p>Gestiona los colegios registrados en Byfrost.</p>
-            <a href="../school/menu-school.php" class="btn btn-info">Gestionar</a>
+            <a href="../root/school/menu-school.php" class="btn btn-info">Gestionar</a>
         </div>
         <div class="card">
             <h3>Rectores</h3>
