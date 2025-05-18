@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/menu-dashboard.php';
+include __DIR__ . '/../menu-dashboard.php';
 ?>
 <div class="main-dashboard">
     <div class="mdashboard-header">
@@ -28,6 +28,6 @@ include __DIR__ . '/menu-dashboard.php';
     </form>
    </div>   
     <?php
-    include __DIR__ . '/../../includes/footer/footer.php';
+    include __DIR__ . '/../../../includes/footer/footer.php';
     include __DIR__ . '/../../includes/root-scripts.php';
     ?>

@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/menu-dashboard.php';
+include __DIR__ . '/../menu-dashboard.php';
 ?>
 
 <div class="main-dashboard">
@@ -12,7 +12,7 @@ include __DIR__ . '/menu-dashboard.php';
         <div class="card">
             <h3>Crear un colegio</h3>
             <p>Registra los colegios aquí</p>
-            <a href="create-school.php" class="btn btn-info">Crear</a>
+            <a href="/create-school.php" class="btn btn-info">Crear</a>
         </div>
         <div class="card">
             <h3>Editar un colegio</h3>
@@ -25,9 +25,10 @@ include __DIR__ . '/menu-dashboard.php';
             <a href="delete-school.php" class="btn btn-info">Borrar</a>
         </div>
     </div>
-
+    </div>
+</div>
 
     <?php
-    include __DIR__ . '/../../includes/footer/footer.php';
-    include __DIR__ . '/../../includes/root-scripts.php';
+    include __DIR__ . '/../../../includes/footer/footer.php';
+    include __DIR__ . '/../../../includes/root-scripts.php';
     ?>
