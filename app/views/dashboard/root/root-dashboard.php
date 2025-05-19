@@ -25,12 +25,12 @@ include __DIR__ . '/menu-dashboard.php';
         </div>
         <div class="card">
             <h3>Configuración</h3>
-            <p>Gestiona la configuración</p>
+            <p>Gestiona la configuración de Byfrost.</p>
             <a href="../root/config-root.php" class="btn btn-info">Gestionar</a>
         </div>
         <div class="card">
             <h3>Reportes</h3>
-            <p>Observa los reportes del sistema</p>
+            <p>Observa los reportes del sistema Byfrost</p>
             <a href="../root/config-root.php" class="btn btn-info">Gestionar</a>
         </div>
     </div>
