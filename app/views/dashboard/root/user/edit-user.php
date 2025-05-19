@@ -19,13 +19,18 @@ include __DIR__ . '/../menu-dashboard.php';
                     <button type="submit"><i data-lucide="search"></i></button>
             </div>
             <div class="input-grid">
-                <input type="text" id="school-name" placeholder="Nombre del colegio" required>
-                <input type="text" id="school-adress" placeholder="Dirección del colegio" required>
-                <input type="number" id="school-phone" placeholder="Teléfono del colegio" required>
-                <input type="text" id="school-email" placeholder="Email del colegio" required>
-                <input type="text" id="school-website" placeholder="Página web del colegio" required>
-                <input type="number" id="headmaster" placeholder="Documento del rector" required>
-
+                <select id="document-type" required>
+                    <option value="" disabled selected>Tipo de documento</option>
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                    <option value="pa">Pasaporte</option>
+                </select>
+                <input type="text" id="user-name" placeholder="Nombre del usuario" required>
+                <input type="number" id="credential-number" placeholder="Documento del usuario" required>
+                <input type="text" id="user-adress" placeholder="Dirección del colegio" required>
+                <input type="number" id="user-phone" placeholder="Teléfono del colegio" required>
+                <input type="text" id="user-email" placeholder="Email del colegio" required>
             </div>
             <div class="form-footer">
                 <button class="btn-register" type="submit" id="submit-school">Actualizar</button>
@@ -33,7 +38,7 @@ include __DIR__ . '/../menu-dashboard.php';
             </div>
         </form>
     </div>
-    
+
     <?php
     include __DIR__ . '/../../../includes/footer/footer.php';
     include __DIR__ . '/../../../includes/root-scripts.php';

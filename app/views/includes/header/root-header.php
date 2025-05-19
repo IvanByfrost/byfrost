@@ -1,7 +1,7 @@
 <header>
     <div class="main-header">
     <div class="logo-header">
-        <a href="root-dashboard.php">
+        <a href="<?= BASE_URL ?>/app/views/dashboard/root/root-dashboard.php">
             <img src="<?= BASE_URL ?>/app/views/assets/img/byfrost.svg" alt="Byfrost Logo" width="50">
         </a>
     </div>

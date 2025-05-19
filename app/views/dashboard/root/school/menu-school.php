@@ -16,7 +16,7 @@ include __DIR__ . '/../menu-dashboard.php';
         </div>
         <div class="card">
             <h3>Editar un colegio</h3>
-            <p>Edita la información los colegios aquí</p>
+            <p>Edita la información de los colegios aquí</p>
             <a href="edit-school.php" class="btn btn-info">Editar</a>
         </div>
         <div class="card">
