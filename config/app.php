@@ -1,5 +1,6 @@
 <?php
 define('BASE_URL', '/byfrost'); // o solo '/' si está en raíz
+define('BASE_PATH', 'F:/xampp/htdocs/byfrost/app/views/'); // o solo '/' si está en raíz
 const APP_NAME = 'Byfrost';
 const APP_VERSION = '0.0.1';
 const APP_URL = 'https://localhost/byfrost';

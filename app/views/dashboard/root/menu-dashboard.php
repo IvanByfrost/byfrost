@@ -8,7 +8,7 @@ include __DIR__ . '/../../includes/header/root-header.php';
 <div class="root-dashboard">
     <div class="root-sidebar">
         <ul>
-            <li><a href="../school/menu-school.php"><i data-lucide="school"></i>Colegios</a></li>
+            <li><a href="<?= BASE_URL ?>/app/views/dashboard/root/school/menu-school.php"><i data-lucide="school"></i>Colegios</a></li>
             <li><a href="user/"><i data-lucide="users"></i>Rectores</a></li>
             <li><a href="#"><i data-lucide="user"></i>Usuarios</a></li>
             <li><a href="#"><i data-lucide="key"></i>Permisos</a></li>
