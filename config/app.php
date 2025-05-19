@@ -1,5 +1,5 @@
 <?php
-define('BASE_PATH', __DIR__ . '/');  // apunta a la raíz del proyecto
+define('BASE_PATH', realpath(__DIR__ . '/../') . '/');
 define('BASE_URL', '/byfrost'); // o solo '/' si está en raíz
 define('LBS', BASE_PATH . 'app/controllers/'); // Carpeta de controladores
 define('VIEWS_PATH', BASE_PATH . 'app/views/');

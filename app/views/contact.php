@@ -1,5 +1,5 @@
 <?php
-require_once '/../config/app.php';
+require_once __DIR__ . '/../../config/app.php';
 include VIEWS_PATH . 'includes/head/contact-head.php';
 include VIEWS_PATH . 'links.php';
 include VIEWS_PATH . 'includes/header/header.php';
