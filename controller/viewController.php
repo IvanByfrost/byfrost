@@ -9,7 +9,7 @@ class viewController extends viewModel {
 
         /*Controlador para obtener vistas*/ 
         public function getViewController(){
-            if (isset($_get['vista'])){
+            if (isset($_GET['vista'])){
                 $route=explode("/", $_GET['vista']);
                 $response = viewModel::obtenerVistaModel($route[0]);
             }

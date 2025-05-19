@@ -9,23 +9,36 @@
     include "./views/links.php"
     ?>
 </head>
+<header>
+    <?php
+    include "./views/includes/rootHeader.php"
+    ?>
+</header>
 
 <body>
     <?php
     $AjaxPetition = false;
     require_once "./controller/viewController.php";
     $IV = new viewController();
-    $vistas = $IV->getTemplateController();
+    $vistas = $IV->getViewController();
     if ($vistas == "login" || $vistas == "404") {
         require_once "./views/contents/" . $vistas . "-view.php";
-    }else{
+    } else {
 
-    
+
     ?>
+        <main>
+            <?php
+            include "./views/includes/navLateral.php"
+            ?>
+        </main>
+        <?php
+        include "./views/includes/rootFooter.php"
+        ?>
 </body>
 <?php
-}
-include "./views/links.php"
+    }
+    include "./views/scripts.php"
 ?>
 
 </html>
