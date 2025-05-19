@@ -11,4 +11,7 @@ include "./views/links.php"
 <body>
     
 </body>
+<?php
+include "./views/links.php"
+?>
 </html>
