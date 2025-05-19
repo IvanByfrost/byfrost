@@ -5,10 +5,10 @@ class viewModel
     /*--- Modelo para obtener vistas ---*/
     protected static function obtenerVistaModel($view)
     {
-        $WhiteList = [];
+        $WhiteList = ["home", "about", "contact", "features", "privacy", "dashboard", "login", "register"];
         if (in_array($view, $WhiteList)) {
-            if (is_file("./app/views/" . $view . ".php")) {
-                $content = "./app/views/" . $view . ".php";
+            if (is_file("./app/views/" . $view . "-view.php")) {
+                $content = "./app/views/" . $view . "-view.php";
             } else {
               $content = "404";  
             }
