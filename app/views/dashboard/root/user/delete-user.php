@@ -3,14 +3,14 @@ include __DIR__ . '/../menu-dashboard.php';
 ?>
 <div class="main-dashboard">
     <div class="mdashboard-header">
-        <h1>Bienvenido al Dashboard del Colegio</h1>
-        <p>Desde aquí puedes gestionar los colegios de Byfrost.</p>
+        <h1>Bienvenido al Dashboard del Usuario</h1>
+        <p>Desde aquí puedes gestionar los usuarios de Byfrost.</p>
     </div>
 
     <div class="main-dashboard">
         <form class="dash-form" id="school-form" method="POST">
             <div class="form-header">
-                <h2><i data-lucide="school"></i>Inactivar colegio</h2>
+                <h2><i data-lucide="school"></i>Inactivar usuario</h2>
                 <p>Aquí puedes inactivar el colegio.</p>
             </div>
             <div class="search-container">

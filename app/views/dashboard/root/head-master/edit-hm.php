@@ -3,37 +3,32 @@ include __DIR__ . '/../menu-dashboard.php';
 ?>
 <div class="main-dashboard">
     <div class="mdashboard-header">
-        <h1>Bienvenido al Dashboard del Colegio</h1>
-        <p>Desde aquí puedes gestionar los colegios de Byfrost.</p>
+        <h1>Bienvenido al Dashboard del Rector</h1>
+        <p>Desde aquí puedes gestionar los rectores de Byfrost.</p>
     </div>
 
     <div class="main-dashboard">
         <form class="dash-form" id="school-form" method="POST">
             <div class="form-header">
-                <h2><i data-lucide="school"></i>Editar usuario</h2>
-                <p>Aquí puedes editar los datos del usuario.</p>
+                <h2><i data-lucide="user"></i>Agregar un rector</h2>
+                <p>Aquí puedes agregar un rector.</p>
             </div>
             <div class="search-container">
                 <form class="search-container" action="#" method="GET">
-                    <input type="text" placeholder="Buscar..." name="q">
+                    <input type="text" placeholder="Buscar documento..." name="q">
                     <button type="submit"><i data-lucide="search"></i></button>
             </div>
             <div class="input-grid">
-                <select id="document-type" required>
-                    <option value="" disabled selected>Tipo de documento</option>
-                    <option value="cc">Cédula de ciudadanía</option>
-                    <option value="ti">Tarjeta de identidad</option>
-                    <option value="ce">Cédula de extranjería</option>
-                    <option value="pa">Pasaporte</option>
-                </select>
+                <input type="number" id="credential-type" placeholder="Tipo de documento" required>
+                <input type="text" id="user-credential" placeholder="Documento del usuario" required>
                 <input type="text" id="user-name" placeholder="Nombre del usuario" required>
-                <input type="number" id="credential-number" placeholder="Documento del usuario" required>
                 <input type="text" id="user-adress" placeholder="Dirección del usuario" required>
                 <input type="number" id="user-phone" placeholder="Teléfono del usuario" required>
                 <input type="text" id="user-email" placeholder="Email del usuario" required>
+                <input type="text" id="school-name" placeholder="Colegio del Rector" required>
             </div>
             <div class="form-footer">
-                <button class="btn-register" type="submit" id="submit-school">Actualizar</button>
+                <button class="btn-register" type="submit" id="submit-school">Asociar</button>
                 <button class="btn-cancel" type="button" id="cancel-school">Cancelar</button>
             </div>
         </form>

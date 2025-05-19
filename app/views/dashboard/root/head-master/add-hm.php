@@ -18,13 +18,27 @@ include __DIR__ . '/../menu-dashboard.php';
                     <input type="text" placeholder="Buscar documento..." name="q">
                     <button type="submit"><i data-lucide="search"></i></button>
             </div>
+            <div class="input-grid">
+                <input type="number" id="credential-type" placeholder="Tipo de documento" required>
+                <input type="text" id="user-credential" placeholder="Documento del usuario" required>
+                <input type="text" id="user-name" placeholder="Nombre del usuario" required>
+                <input type="text" id="user-adress" placeholder="Dirección del usuario" required>
+                <input type="number" id="user-phone" placeholder="Teléfono del usuario" required>
+                <input type="text" id="user-email" placeholder="Email del usuario" required>
+            </div>
+            <select id="document-type" required>
+                <option value="" disabled selected>Colegio</option>
+                <option value="1" id = "1">Colegio Mayor Franciscano</option>
+                <option value="2" id = "2">Colegio Tomás Moro</option>
+                <option value="3" id = "3">Colegio María Montessori</option>
+            </select>
             <div class="form-footer">
-                <button class="btn-register" type="submit" id="submit-school">Registrar</button>
+                <button class="btn-register" type="submit" id="submit-school">Asociar</button>
                 <button class="btn-cancel" type="button" id="cancel-school">Cancelar</button>
             </div>
         </form>
     </div>
-    
+
     <?php
     include __DIR__ . '/../../../includes/footer/footer.php';
     include __DIR__ . '/../../../includes/root-scripts.php';
