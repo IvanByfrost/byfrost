@@ -10,9 +10,9 @@ include __DIR__ . '/../menu-dashboard.php';
 
     <div class="dashboard-cards">
         <div class="card">
-            <h3>Crear un colegio</h3>
-            <p>Registra los colegios aquí</p>
-            <a href="../school/create-school.php" class="btn btn-info">Crear</a>
+            <h3>Agregar un rector</h3>
+            <p>Asociar al rector a su colegio</p>
+            <a href="../head-master/add-hm.php" class="btn btn-info">Crear</a>
         </div>
         <div class="card">
             <h3>Editar un colegio</h3>
