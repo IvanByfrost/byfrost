@@ -21,7 +21,7 @@ include __DIR__ . '/menu-dashboard.php';
         <div class="card">
             <h3>Usuarios</h3>
             <p>Gestiona los usuarios registrados en Byfrost.</p>
-            <a href="user.php" class="btn btn-info">Gestionar</a>
+            <a href="../root/user/menu-user.php" class="btn btn-info">Gestionar</a>
         </div>
     </div>
     </div>
