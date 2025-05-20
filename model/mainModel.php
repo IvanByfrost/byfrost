@@ -80,4 +80,23 @@ class mainModel
         $string = trim($string);
         return $string;
     }
+    /*Función para verificar los datos*/
+    protected static function verifyData($filter, $string)
+    {
+        if (preg_match("^" . $filter . "$/", $string)) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    /*Función para validar las fechas*/
+    protected static function validateDate($date)
+    {
+        $val = explode('-', $date);
+        if (count($val) == 3 && checkdate($val[1], $val[2], $val[0])) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
