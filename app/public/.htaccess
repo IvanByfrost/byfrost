@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase / # Si public/ es la raíz de tu dominio (DocumentRoot), esta es la base.
+
+    # 1. Si la petición es para un ARCHIVO existente (ej. /css/style.css, /js/script.js, /img/logo.png),
+    #    NO hagas ninguna reescritura. Sirve el archivo directamente.
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    # 2. Si la petición es para un DIRECTORIO existente,
+    #    NO hagas ninguna reescritura. Sirve el contenido del directorio (ej. si hay un index.html).
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # 3. Si la petición NO es para un archivo existente Y NO es para un directorio existente,
+    #    redirige INTERNAMENTE TODO (cualquier cosa después de la base) a index.php.
+    #    La URL en el navegador NO cambia.
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
