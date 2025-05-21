@@ -1,13 +1,11 @@
 <?php
 class mainController
 {
-    public function builder(){}
-
     protected function model($model)
     {
-        $modelUrl = '../app/model/' . $model . '.php';
-        if (file_exists($modelUrl)) {
-            require_once $modelUrl;
+        $modelPath = '../app/model/' . $model . '.php';
+        if (file_exists($modelPath)) {
+            require_once $modelPath;
             return new $model();
         } else {
             throw new Exception("Model not found: " . $model);
@@ -17,10 +15,10 @@ class mainController
     protected function view($viewName, $data = [], $layout = null)
     {
         extract($data);
-        $view_path = '../app/views/layouts' . $viewName . '.php';
+        $view_path = '../app/views/' . $viewName . '.php';
         if (file_exists($view_path)) {
             if ($layout) {
-                $layoutPath = '../app/views/layouts/' . $layout . '.php';
+                $layoutPath = '../app/views/' . $layout . '.php';
                 if (file_exists($layoutPath)) {
                     require_once $layoutPath;
                 } else {
@@ -30,7 +28,7 @@ class mainController
                 require_once $view_path;
             }
         }else {
-            require_once '../app/views/errors/404-view.php';
+            require_once '../app/views/errors/404.php';
         }
     }
     protected function redirect($url)

@@ -1,27 +1,13 @@
 <?php
 if ($AjaxPetition) {
-    require_once "../config/server.php";
+    require_once "../config/config.php";
 } else {
-    require_once "./config/server.php";
+    require_once "./config/config.php";
 }
 
 class mainModel
 {
-    /*Función para conectar a la base de datos*/
-    protected static function connect()
-    {
-        $connection = new PDO(SGBD, user, pass);
-        $connection->exec("SET CHARACTER SET utf8");
-        return $connection;
-    }
-    /*Función para consultas simples*/
-    protected static function executeSimpleQuery($query)
-    {
-        $sql = self::connect();
-        $response = $sql->prepare($query);
-        $response->execute();
-        return $response;
-    }
+
     
     /*Función para limpiar cadenas*/
     protected static function cleanString($string)
@@ -54,25 +40,7 @@ class mainModel
         $string = trim($string);
         return $string;
     }
-    /*Función para verificar los datos*/
-    protected static function verifyData($filter, $string)
-    {
-        if (preg_match("^" . $filter . "$/", $string)) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-    /*Función para validar las fechas*/
-    protected static function validateDate($date)
-    {
-        $val = explode('-', $date);
-        if (count($val) == 3 && checkdate($val[1], $val[2], $val[0])) {
-            return false;
-        } else {
-            return true;
-        }
-    }
+
     /*Función paginador de tablas*/
     protected static function dataPagination($page, $nPages, $url, $buttons)
     {
