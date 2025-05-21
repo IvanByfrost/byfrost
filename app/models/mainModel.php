@@ -5,7 +5,7 @@ if ($AjaxPetition) {
     require_once "./config/config.php";
 }
 
-class mainModel
+class MainModel
 {
 
     

@@ -1,8 +1,8 @@
 <?php
 
-class database {
+class Database {
     /*Función para conectar a la base de datos*/
-    protected static function connect()
+    public static function connect()
     {
         $connection = new PDO(SGBD, USER, PASSWORD);
         $connection->exec("SET CHARACTER SET utf8");
