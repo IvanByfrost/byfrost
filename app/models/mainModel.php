@@ -7,8 +7,7 @@ if ($AjaxPetition) {
 
 class MainModel
 {
-
-    
+   
     /*Función para limpiar cadenas*/
     protected static function cleanString($string)
     {
