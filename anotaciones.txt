@@ -1,0 +1,13 @@
+05/06/2025
+	
+	* disponemos del primer módulo a trabajar (login)
+	* front del login disponemos los siguientes requisitos:
+		- campo usuario
+			- minimo caracteres de 4
+			- maximo caracteres de 12
+		- campo password
+			- minimo caracteres de 4
+			- maximo caracteres de 12
+	* se ha pasado a publica el repositorio git
+	* agregarme como colaborador
+	* 
