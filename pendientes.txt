@@ -11,6 +11,6 @@ x	* En la contraseña colocar maximo 12
 
 x	* Agregar en el login tipo de documento
 x	* Agregar en el registro tipo de documento
-	* Agregar en el registro correo electronico
+x	* Agregar en el registro correo electronico
 
 x	* Quitar olvidaste contraseña

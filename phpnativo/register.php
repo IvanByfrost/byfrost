@@ -53,8 +53,12 @@
             <div class="col-12">
                 <select class="inputEstilo1" id="tipoDocumento" required>
                     <option value="">Seleccione</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+                    <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Cédula de extranjería">Cédula de extranjería</option>
+                    <option value="Permiso de permanencia">Permiso de permanencia</option>
+                    <option value="Registro civil">Registro civil</option>
                 </select>
             </div>
             <div class="col-12">
@@ -65,11 +69,11 @@
             </div>
 
             <div class="col-6">
-                <button type="submit" id="iniciar-sesion" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Iniciar sesión</button>
+                <button type="submit" id="register-bttn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Completar Registro</button>
             </div>
             <div class="col-6">
-                <a href="register.php">
-                    <button type="button" id="register-bttn" class="bg-green-700 hover:bg-green-800 text-yellow-300 font-bold py-2 px-4 rounded" style="color: white;">Crear una nueva cuenta</button>
+                <a href="login.php">
+                    <button type="button" id="iniciar-sesion" class="bg-green-700 hover:bg-green-800 text-yellow-300 font-bold py-2 px-4 rounded" style="color: white;">Iniciar Sesión</button>
                 </a>
             </div>
         </div>
