@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 }
 
-.login-box input {
+.inputEstilo1 {
     width: 100%;
     padding: 20px;
     margin-bottom: 15px;
@@ -39,7 +39,6 @@
     box-sizing: border-box;
     font-size: 16px;
     font-family: lato, sans-serif;
-
 }
 
 .login-box button {

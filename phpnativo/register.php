@@ -46,7 +46,10 @@
 			</a>
         </div>
         <div class="row">
-            <div class="col-12 mt-3 mb-3" style="font-weight: bold; font-size: 30px;">INICIAR SESIÓN</div>
+            <div class="col-12 mt-3 mb-3" style="font-weight: bold; font-size: 30px;">NUEVO REGISTRO</div>
+            <div class="col-12">
+                <input type="email" class="inputEstilo1" id="correo" name="correo" placeholder="Correo Electrónico" autocomplete="off" required>
+            </div>
             <div class="col-12">
                 <select class="inputEstilo1" id="tipoDocumento" required>
                     <option value="">Seleccione</option>
@@ -119,6 +122,7 @@
 
     $("#formulario1").on("submit", function(e){
         e.preventDefault();
+        var correo = $('#correo').val();
         var tipoDocumento = $('#tipoDocumento').val();
         var documento = $('#documento').val();
         var password = $('#password').val();
@@ -162,10 +166,11 @@
             url: 'script/login.php',
             dataType: "JSON",
             data: {
+                "correo": correo,
                 "tipoDocumento": tipoDocumento,
                 "documento": documento,
                 "password": password,
-                "asunto": "login",
+                "asunto": "register",
             },
 
             success: function(respuesta) {

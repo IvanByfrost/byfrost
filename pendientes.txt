@@ -1,16 +1,16 @@
 05/06/2025
 
-	* En el numero de contacto colocar solo numeros
-	* En el numero de contacto colocar minimo 4
-	* En el numero de contacto colocar maximo 12
-	* En el numero de contacto quitar autocomplete
+x	* En el numero de contacto colocar solo numeros
+x	* En el numero de contacto colocar minimo 4
+x	* En el numero de contacto colocar maximo 12
+x	* En el numero de contacto quitar autocomplete
 
-	* En la contraseña colocar minimo 4
-	* En la contraseña colocar maximo 12
+x	* En la contraseña colocar minimo 4
+x	* En la contraseña colocar maximo 12
 
 
-	* Agregar en el login tipo de documento
+x	* Agregar en el login tipo de documento
+x	* Agregar en el registro tipo de documento
 	* Agregar en el registro correo electronico
-	* Agregar en el registro tipo de documento
 
-	* Quitar olvidaste contraseña
+x	* Quitar olvidaste contraseña
