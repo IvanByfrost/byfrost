@@ -14,3 +14,18 @@ x	* Agregar en el registro tipo de documento
 x	* Agregar en el registro correo electronico
 
 x	* Quitar olvidaste contraseña
+
+
+09/06/2025
+
+	x* Validar el login
+	x* Que se coloque mensajes con los errores
+	x* Crear base de datos
+	x* Crear tabla de usuario
+	x* Crear tabla roles
+
+	x* En registrar validarlo
+	x* Que se coloque mensajes con los errores
+	x* Colocar un campo adicional que se llame confirmar contraseña
+	x* No se repita correo electronico
+	x* No se repita tipo y numero de documento
